@@ -1,7 +1,7 @@
 const AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 const poolData = {
-   UserPoolId: "us-east-1_dTtHzlieJ",
-   ClientId: "323frdr9fvh4pm96p2un7og3al"
+   UserPoolId: "",
+   ClientId: ""
 };
 const pool_region = "us-east-1";
 const userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
