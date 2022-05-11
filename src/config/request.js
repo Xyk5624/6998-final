@@ -18,7 +18,7 @@ export const Request = (url = '', params = {}) => {
     // 获取请求公用参数
     // params.data.token = token;
     // params.data.clt = 'h5';
-    // params.data.sign = '70ffb548fc64ac1';
+    // params.data.sign = '';
 
     // 不同的后台接口传不同的请求方式 以及和传参格式  将token设置在请求头中
     let contentType = 'application/x-www-form-urlencoded';
@@ -40,7 +40,7 @@ export const Request = (url = '', params = {}) => {
             axios.get(config.domainPath + url, {
                 params: Object.assign(params.data, {
                     'clt': 'h5',
-                    'sign': '70ffb548fc64ac1'
+                    'sign': ''
                 })
             }).then((res) => {
                 if (res.data.code == "4000") {
@@ -69,7 +69,7 @@ export const Request = (url = '', params = {}) => {
             axios.post(config.domainPath + url, {
                 params: Object.assign(params.data, {
                     'clt': 'h5',
-                    'sign': '70ffb548fc64ac1'
+                    'sign': ''
                 })
             }).then((res) => {
                 console.log(1)

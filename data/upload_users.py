@@ -267,7 +267,7 @@ if __name__ == "__main__":
             "Country": country,
             "FirstName": first_name,
             "LastName": last_name,
-            "S3Key": "https://coms6998-user-photos.s3.amazonaws.com/" + s3_key,
+            "S3Key": "{aws s3 url}" + s3_key,
             "CourseTaken": c_taken,
             "CourseTaking": c_taking,
             "FindingBuddy": buddy,
